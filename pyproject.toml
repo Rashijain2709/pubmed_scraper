@@ -1,0 +1,28 @@
+[project]
+name = "pubmed-scraper"
+version = "0.1.0"
+description = "Fetch PubMed papers with non-academic authors"
+authors = [
+  { name = "Rashi Jain", email = "rjrashijain2709@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "requests>=2.32.4"
+]
+
+[project.urls]
+Repository = "https://github.com/Rashijain2709/pubmed-scraper"
+
+[project.scripts]
+get-papers-list = "cli.main:main"
+
+[tool.poetry]
+packages = [{ include = "pubmed_scraper", from = "src" }]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
