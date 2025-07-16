@@ -9,17 +9,17 @@ def test_parser_with_sample():
             <ArticleTitle>Sample Title</ArticleTitle>
             <AuthorList>
               <Author>
-                <LastName>Smith</LastName>
-                <ForeName>John</ForeName>
+                <LastName>Rashi</LastName>
+                <ForeName>Jain</ForeName>
                 <AffiliationInfo>
-                  <Affiliation>BioTechCorp, California, USA</Affiliation>
+                  <Affiliation>Pune, Maharashtra, India</Affiliation>
                 </AffiliationInfo>
               </Author>
             </AuthorList>
             <Journal>
               <JournalIssue>
                 <PubDate>
-                  <Year>2024</Year>
+                  <Year>2025</Year>
                 </PubDate>
               </JournalIssue>
             </Journal>
@@ -31,4 +31,4 @@ def test_parser_with_sample():
     result = parse_pubmed_response(xml)
     assert len(result) == 1
     assert result[0]["Title"] == "Sample Title"
-    assert "BioTechCorp" in result[0]["CompanyAffiliation(s)"]
+    assert "Pune, Maharashtra, India" in result[0]["CompanyAffiliation(s)"]
