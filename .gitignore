@@ -1,8 +1,29 @@
+# Byte-compiled / cache
 __pycache__/
-.pytest_cache/
-*.pyc
+*.py[cod]
 *.pyo
 *.pyd
+*.pyc
+
+# Poetry
+poetry.lock
 dist/
 build/
 *.egg-info/
+
+# Virtualenv
+.env
+.venv/
+venv/
+ENV/
+env/
+
+# VSCode
+.vscode/
+
+# Pytest
+.pytest_cache/
+
+# OS Files
+.DS_Store
+Thumbs.db
