@@ -12,7 +12,7 @@ def test_parser_with_sample():
                 <LastName>Rashi</LastName>
                 <ForeName>Jain</ForeName>
                 <AffiliationInfo>
-                  <Affiliation>Pune, Maharashtra, India</Affiliation>
+                  <Affiliation>BiotechCorp, Pune, Maharashtra, India</Affiliation>
                 </AffiliationInfo>
               </Author>
             </AuthorList>

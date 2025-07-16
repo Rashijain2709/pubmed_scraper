@@ -14,8 +14,8 @@ dependencies = [
 [project.urls]
 Repository = "https://github.com/Rashijain2709/pubmed-scraper"
 
-[project.scripts]
-get-papers-list = "cli.main:main"
+[tool.poetry.scripts]
+get-papers-list = "pubmed_scraper.cli.main:main"
 
 [tool.poetry]
 packages = [{ include = "pubmed_scraper", from = "src" }]
