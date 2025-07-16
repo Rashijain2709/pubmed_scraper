@@ -46,21 +46,23 @@ pip install --index-url https://test.pypi.org/simple/ pubmed-scraper
 ```
 pubmed_scraper/
 │
-├── cli/                     # Command-line interface logic
-│   └── main.py
+├── cli/                      # CLI entry point logic
+│   └── main.py               # Contains CLI commands (argparse/typer/click)
 │
-├── pubmed_scraper/          # Core module for fetching and processing PubMed data
-│   ├── __init__.py
-│   ├── api.py
-│   ├── parser.py
-│   └── writer.py
+├── src/
+│   └── pubmed_scraper/       # Installable Python package
+│       ├── __init__.py
+│       ├── api.py            # Handles PubMed API requests
+│       ├── parser.py         # Parses XML or JSON responses
+│       ├── writer.py         # Writes results to CSV
 │
-├── tests/                   # Unit tests
+├── tests/                    # Unit tests
 │   └── test_parser.py
 │
-├── pyproject.toml           # Poetry configuration
-├── README.md                # Project documentation
-└── LICENSE                  # MIT License
+├── pyproject.toml            # Poetry project configuration
+├── README.md                 # Project documentation
+└── .gitignore                # (Recommended) Git ignore patterns
+
 ```
 
 ---
