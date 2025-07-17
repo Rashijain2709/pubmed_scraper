@@ -1,6 +1,6 @@
 [project]
 name = "pubmed-scraper-rashi"
-version = "0.1.1"
+version = "0.1.3"
 description = "Fetch PubMed papers with non-academic authors"
 authors = [
   { name = "Rashi Jain", email = "rjrashijain2709@gmail.com" }
